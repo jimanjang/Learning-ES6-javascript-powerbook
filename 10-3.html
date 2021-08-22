@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>업로드 할 이미지 미리보기 구현</title>
+	<style>
+		.dellink{
+			display: none;
+		padding: 2px 5px;
+		text-decoration: none;
+		background-color: #f0f0f0;
+		width: 70px;
+		color: #000;
+		border-radius: 6px;
+		font-size: 0.8375em;
+		border: 1px solid #ccc;
+		}
+		img{
+			width: 60px;
+			border: 1px solid #ccc;
+			padding: 5px;
+			margin: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+<input type="file" class="hidden_input" id="imageSelector" name="imageSelector" accept="image/jpeg, image/jpg, image/png" multiple /><br/>
+<img src="" class="thumb"/>
+<a href="javascript:void(0);" class="dellink">썸네일삭제</a>
+</body>
+<script type="text/javascript" src="./10-3.js"></script>
+</html>

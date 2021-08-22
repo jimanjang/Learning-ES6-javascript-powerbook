@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>이벤트 위임(Event Deligation)으로 메뉴 선택 구현하기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.menuwrap{
+			width: 100%;
+			text-align: center;
+		}      
+		.menu{
+			position: relative;
+			margin: 0 auto;
+			list-style: none;
+		}
+		.menu li{
+			font-size: 0.9375em;
+			padding: 5px 15px;
+			text-align: center;
+			display: inline-block;
+			cursor: pointer;
+			padding: 10px;
+		}
+		.menu li a{
+			padding: 10px;
+		}
+		.menu li a span{
+			padding: 10px;
+		}
+		.active{
+			font-weight: bold;
+			border-bottom: 2px solid #a00;
+			color: #a00;
+		}
+	</style>
+  <script type="text/javascript" src="./10-5.js"></script>
+</head>
+<body>
+	<div class="menuwrap">
+		<ul class="menu">
+			<li class="item" data-menuid="0">
+				<a class="active"><span>메인</span></a>
+			</li>
+			<li class="item" data-menuid="1">
+				<a><span>소개</span></a>
+			</li>
+			<li class="item" data-menuid="2">
+				<a><span>상품</span></a>
+			</li>
+			<li class="item" data-menuid="3">
+				<a><span>고객지원</span></a>
+			</li>
+			<li class="item" data-menuid="4">
+				<a><span>오시는길</span></a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
